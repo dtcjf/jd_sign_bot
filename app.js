@@ -36,6 +36,7 @@ async function sendNotify (text,desp) {
     method: 'POST'
   }
   await rp.post(options).then(res=>{
+    console.log(options.uri)
     console.log(res)
   }).catch((err)=>{
     console.log(err)
